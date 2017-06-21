@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="scene2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller2">
+
+   <center>
+      <ListView fx:id="listView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <VBox prefHeight="400.0" prefWidth="101.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="CreateNewButton" mnemonicParsing="false" onAction="#handleButtonCreateNew" prefHeight="200.0" prefWidth="100.0" text="Create New" wrapText="true" />
+            <Region prefHeight="200.0" prefWidth="200.0" />
+            <Button fx:id="ModifyButton" mnemonicParsing="false" onAction="#handleModifyButton" prefHeight="200.0" prefWidth="100.0" text="Modify" wrapText="true" />
+            <Region prefHeight="200.0" prefWidth="200.0" />
+            <Button fx:id="DeleteButton" mnemonicParsing="false" onAction="#handleButtonDelete" prefHeight="200.0" prefWidth="100.0" text="Delete" wrapText="true" />
+         </children>
+      </VBox>
+   </right>
+   <top>
+      <Button fx:id="BackButton" mnemonicParsing="false" onAction="#handleButtonBack" prefHeight="25.0" prefWidth="188.0" text="&lt;= BACK TO MENU" BorderPane.alignment="CENTER_LEFT" />
+   </top>
+   <bottom>
+      <Button fx:id="ChooseButton" mnemonicParsing="false" onAction="#handleButtonChoose" prefHeight="36.0" prefWidth="168.0" text="Choose" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

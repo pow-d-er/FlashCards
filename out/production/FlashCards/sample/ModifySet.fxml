@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerModifySet">
+   <center>
+      <VBox prefHeight="353.0" prefWidth="210.0" BorderPane.alignment="CENTER">
+         <children>
+            <Region prefHeight="113.0" prefWidth="180.0" />
+            <Label fx:id="newWordLabel" text="Add new word:" />
+            <TextField fx:id="NewWord" />
+            <Label fx:id="newTranslationLabel" text="Add translation:" />
+            <TextField fx:id="NewTranslation" />
+            <Button fx:id="newFlashCardButton" mnemonicParsing="false" onAction="#handleButtonNewFlashCard" prefHeight="25.0" prefWidth="204.0" text="Add new FlashCard to set" />
+         </children>
+      </VBox>
+   </center>
+   <left>
+      <HBox prefHeight="353.0" prefWidth="216.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="400.0" prefWidth="208.0">
+               <children>
+                  <Label fx:id="listLabel" text="List of words:" />
+                  <ListView fx:id="listView" prefHeight="309.0" prefWidth="290.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </left>
+   <top>
+      <Label fx:id="NameOfSet" alignment="CENTER" prefHeight="47.0" prefWidth="260.0" text="Name of set" textAlignment="CENTER" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+   </top>
+   <right>
+      <Region prefHeight="353.0" prefWidth="178.0" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <HBox prefHeight="29.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="BackButton" mnemonicParsing="false" onAction="#handleButtonBack" prefHeight="25.0" prefWidth="91.0" text="Back" />
+            <Region prefHeight="29.0" prefWidth="30.0" />
+            <Button fx:id="ModifyButton" mnemonicParsing="false" onAction="#handleButtonModify" prefHeight="25.0" prefWidth="120.0" text="Modify" />
+            <Region prefHeight="29.0" prefWidth="28.0" />
+            <Button fx:id="DeleteButton" mnemonicParsing="false" onAction="#handleButtonDelete" prefHeight="25.0" prefWidth="102.0" text="Delete" />
+            <Region prefHeight="29.0" prefWidth="134.0" />
+            <Button fx:id="FinishButton" mnemonicParsing="false" onAction="#handleButtonFinish" prefHeight="25.0" prefWidth="96.0" text="Finish" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

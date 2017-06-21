@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane fx:controller="sample.ControllerModifyWord" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="175.0" prefWidth="460.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="144.0" layoutY="29.0" prefHeight="126.0" prefWidth="274.0" AnchorPane.leftAnchor="144.0" AnchorPane.rightAnchor="182.0">
+         <children>
+            <Label fx:id="word" text="Word:" />
+            <TextField fx:id="textWord" />
+            <Label fx:id="translation" layoutX="10.0" layoutY="10.0" text="Translation:" />
+            <TextField fx:id="textTranslation" layoutX="10.0" layoutY="25.0" />
+            <HBox prefHeight="71.0" prefWidth="274.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <Button fx:id="cancelButton" mnemonicParsing="false" text="Cancel"  onAction="#handleCancelButton"/>
+                  <Button fx:id="saveButton" mnemonicParsing="false" text="Save" onAction="#handleSaveButton"/>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
